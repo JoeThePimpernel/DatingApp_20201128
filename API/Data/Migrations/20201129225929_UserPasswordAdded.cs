@@ -14,7 +14,7 @@ namespace API.Data.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<byte[]>(
-                name: "PaswordHash",
+                name: "PasswordHash",
                 table: "Users",
                 type: "BLOB",
                 nullable: true);
@@ -27,7 +27,7 @@ namespace API.Data.Migrations
                 table: "Users");
 
             migrationBuilder.DropColumn(
-                name: "PaswordHash",
+                name: "PasswordHash",
                 table: "Users");
         }
     }
